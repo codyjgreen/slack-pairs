@@ -5,11 +5,11 @@ class CreatePairsJob < ApplicationJob
     def perform
       Rails.logger.info("Running CreatePairsJob")
       date = Date.today
-      if date.thursday?
+      # if date.thursday?
       # if date.monday? && date.cweek.odd?
         Rails.logger.info("It's a Monday on an odd week! Generating pairs!")
         perform!
-      end
+      # end
     end
 
     def perform!
