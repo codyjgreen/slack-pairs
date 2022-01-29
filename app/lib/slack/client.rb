@@ -1,5 +1,5 @@
 module Slack
-  require 'pry'
+  # require 'pry'
   class Client
     attr_reader :client
 
